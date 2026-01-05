@@ -1,11 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Kosli Documentation",
   "colors": {
     "primary": "#2E6C47",
     "light": "#67AA7C",
     "dark": "#67AA7C"
+  },
+  "fonts": {
+    "family": "IBM Plex Sans"
   },
   "api": {
     "mdx": {
@@ -15,6 +18,7 @@
       }
     }
   },
+
   "favicon": "/favicon-32x32.png",
   "navigation": {
     "tabs": [
