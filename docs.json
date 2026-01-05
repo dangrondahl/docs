@@ -18,9 +18,15 @@
       }
     }
   },
-
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
   "favicon": "/favicon-32x32.png",
   "navigation": {
+    "products": [
+      {
+        "product": "Platform",
+        "icon": "cloud",
     "tabs": [
       {
         "tab": "Documentation",
@@ -101,32 +107,40 @@
         ]
       },
       {
-        "tab": "CLI Reference",
-        "groups": [
+        "tab": "Reference",
+        "menu": [
           {
-            "group": "CLI documentation",
-            "pages": [
-              "client_reference/kosli_attest_artifact",
-              "client_reference/kosli_attest_snyk",
-              "client_reference/kosli_begin_trail"
+            "item": "CLI Reference",
+            "icon": "terminal",
+            "groups": [
+              {
+                "group": "CLI documentation",
+                "pages": [
+                  "client_reference/kosli_attest_artifact",
+                  "client_reference/kosli_attest_snyk",
+                  "client_reference/kosli_begin_trail"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
+          },
           {
-            "group": "Environments",
-            "icon": "layer-group",
-            "pages": [
-              "api-reference/endpoint/list_environments",
-              "api-reference/endpoint/put_environment"
+            "item": "API Reference",
+            "icon": "code",
+            "groups": [
+              {
+                "group": "Environments",
+                "pages": [
+                  "api-reference/endpoint/list_environments",
+                  "api-reference/endpoint/put_environment"
+                ]
+              }
             ]
           }
         ]
       }
     ]
+  }
+]
   },
   "logo": {
     "light": "/logo/kosli-logo-light-main.svg",
