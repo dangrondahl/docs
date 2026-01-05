@@ -3,101 +3,141 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2E6C47",
+    "light": "#67AA7C",
+    "dark": "#67AA7C"
   },
-  "favicon": "/favicon.svg",
+  "api": {
+    "mdx": {
+      "server": "https://app.kosli.com/api/v2/",
+      "auth": {
+        "method": "bearer"
+      }
+    }
+  },
+  "favicon": "/favicon-32x32.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
+            "group": "Understand Kosli",
+            "icon": "book-open",
+            "pages": [
+              "understand_kosli/what_is_kosli",
+              "understand_kosli/concepts"
+            ]
+          },
+          {
             "group": "Getting started",
+            "icon": "rocket",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting_started/install",
+              "getting_started/service-accounts",
+              "getting_started/flows",
+              "getting_started/trails",
+              "getting_started/artifacts",
+              "getting_started/attestations",
+              "getting_started/environments",
+              "getting_started/policies",
+              "getting_started/approvals"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Administration",
+            "icon": "cog",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              {
+                "group": "Managing Users",
+                "pages": [
+                  "administration/managing_users/roles_in_kosli"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Implementation Guide",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Phase 1: Initial Discovery",
+            "icon": "lightbulb",
             "pages": [
-              "api-reference/introduction"
+              {
+                "group": "Roles & Responsibilities",
+                "pages": [
+                  "implementation_guide/phase_1/roles_and_responsibilities/overview",
+                  "implementation_guide/phase_1/roles_and_responsibilities/platform_engineers",
+                  "implementation_guide/phase_1/roles_and_responsibilities/app_developers",
+                  "implementation_guide/phase_1/roles_and_responsibilities/security_compliance"
+                ]
+              }
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Phase 2: Configure Kosli",
+            "icon": "gear",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              {
+                "group": "Plan Organizational Structure",
+                "pages": [
+                  {
+                    "group": "Naming Conventions",
+                    "pages": [
+                      "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/overview",
+                      "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/flows_and_trails"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "CLI documentation",
+            "pages": [
+              "client_reference/kosli_attest_artifact",
+              "client_reference/kosli_begin_trail"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Environments",
+            "icon": "layer-group",
+            "pages": [
+              "api-reference/endpoint/list_environments",
+              "api-reference/endpoint/put_environment"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/kosli-logo-light-main.svg",
+    "dark": "/logo/kosli-logo-dark-main.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@kosli.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Kosli App",
+      "href": "https://app.kosli.com"
     }
   },
   "contextual": {
@@ -114,9 +154,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/kosli-dev",
+      "linkedin": "https://linkedin.com/company/kosli-dev"
     }
   }
 }
