@@ -45,7 +45,7 @@ The following sections show how to make each of the four attestations defined in
     ```shell
     kosli attest jira \
         --flow backend-ci \
-      --trail $(git rev-parse HEAD) \
+        --trail $(git rev-parse HEAD) \
         --name jira-ticket
         ...
     ```
@@ -70,7 +70,7 @@ The following sections show how to make each of the four attestations defined in
   kosli attest artifact my_company/backend:latest \
     --artifact-type docker \
       --flow backend-ci \
-    --trail $(git rev-parse HEAD) \
+      --trail $(git rev-parse HEAD) \
       --name backend
       ...
   ```
