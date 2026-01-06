@@ -31,11 +31,8 @@
       "light": "#F2F3F6"
     }
   },
-  "integrations": {
-    "cookies": {
-      "key": "cookie_consent",
-      "value": "accepted"
-    }
+  "metadata": {
+    "timestamp": true
   },
   "favicon": "/favicon-32x32.png",
   "navigation": {
@@ -43,77 +40,121 @@
       {
         "product": "Platform",
         "icon": "cloud",
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "groups": [
+        "tabs": [
           {
-            "group": "Understand Kosli",
-            "icon": "book-open",
-            "pages": [
-              "understand_kosli/what_is_kosli",
-              "understand_kosli/concepts"
-            ]
-          },
-          {
-            "group": "Getting started",
-            "icon": "rocket",
-            "pages": [
-              "getting_started/install",
-              "getting_started/service-accounts",
-              "getting_started/flows",
-              "getting_started/trails",
-              "getting_started/artifacts",
-              "getting_started/attestations",
-              "getting_started/environments",
-              "getting_started/policies",
-              "getting_started/approvals"
-            ]
-          },
-          {
-            "group": "Administration",
-            "icon": "cog",
-            "pages": [
+            "tab": "Documentation",
+            "groups": [
               {
-                "group": "Managing Users",
+                "group": "Understand Kosli",
+                "icon": "book-open",
                 "pages": [
-                  "administration/managing_users/roles_in_kosli"
+                  "understand_kosli/what_is_kosli",
+                  "understand_kosli/concepts"
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Implementation Guide",
-        "groups": [
-          {
-            "group": "Phase 1: Initial Discovery",
-            "icon": "lightbulb",
-            "pages": [
+              },
               {
-                "group": "Roles & Responsibilities",
+                "group": "Getting started",
+                "icon": "rocket",
                 "pages": [
-                  "implementation_guide/phase_1/roles_and_responsibilities/overview",
-                  "implementation_guide/phase_1/roles_and_responsibilities/platform_engineers",
-                  "implementation_guide/phase_1/roles_and_responsibilities/app_developers",
-                  "implementation_guide/phase_1/roles_and_responsibilities/security_compliance"
+                  "getting_started/install",
+                  "getting_started/service-accounts",
+                  "getting_started/flows",
+                  "getting_started/trails",
+                  "getting_started/artifacts",
+                  "getting_started/attestations",
+                  "getting_started/environments",
+                  "getting_started/policies",
+                  "getting_started/approvals"
                 ]
-              }
-            ]
-          },
-          {
-            "group": "Phase 2: Configure Kosli",
-            "icon": "gear",
-            "pages": [
+              },
               {
-                "group": "Plan Organizational Structure",
+                "group": "Administration",
+                "icon": "cog",
                 "pages": [
                   {
-                    "group": "Naming Conventions",
+                    "group": "Managing Users",
                     "pages": [
-                      "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/overview",
-                      "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/flows_and_trails"
+                      "administration/managing_users/roles_in_kosli"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Implementation Guide",
+            "groups": [
+              {
+                "group": "Phase 1: Initial Discovery",
+                "icon": "lightbulb",
+                "pages": [
+                  {
+                    "group": "Roles & Responsibilities",
+                    "pages": [
+                      "implementation_guide/phase_1/roles_and_responsibilities/overview",
+                      "implementation_guide/phase_1/roles_and_responsibilities/platform_engineers",
+                      "implementation_guide/phase_1/roles_and_responsibilities/app_developers",
+                      "implementation_guide/phase_1/roles_and_responsibilities/security_compliance"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Phase 2: Configure Kosli",
+                "icon": "gear",
+                "pages": [
+                  {
+                    "group": "Plan Organizational Structure",
+                    "pages": [
+                      {
+                        "group": "Naming Conventions",
+                        "pages": [
+                          "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/overview",
+                          "implementation_guide/phase_2/plan_organizational_structure/naming_conventions/flows_and_trails"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Reference",
+            "menu": [
+              {
+                "item": "CLI Reference",
+                "icon": "terminal",
+                "groups": [
+                  {
+                    "group": "CLI Commands",
+                    "pages": [
+                      "client_reference/kosli_allow_artifact",
+                      "client_reference/kosli_attest_artifact",
+                      "client_reference/kosli_attest_custom",
+                      "client_reference/kosli_attest_generic",
+                      "client_reference/kosli_attest_snyk",
+                      "client_reference/kosli_begin_trail"
+                    ]
+                  },
+                  {
+                    "group": "Deprecated",
+                    "pages": [
+                      "client_reference/kosli_expect_deployment",
+                      "client_reference/kosli_report_artifact"
+                    ]
+                  }
+                ]
+              },
+              {
+                "item": "API Reference",
+                "icon": "code",
+                "groups": [
+                  {
+                    "group": "Environments",
+                    "pages": [
+                      "api-reference/endpoint/list_environments",
+                      "api-reference/endpoint/put_environment"
                     ]
                   }
                 ]
@@ -121,43 +162,8 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Reference",
-        "menu": [
-          {
-            "item": "CLI Reference",
-            "icon": "terminal",
-            "groups": [
-              {
-                "group": "CLI documentation",
-                "pages": [
-                  "client_reference/kosli_attest_artifact",
-                  "client_reference/kosli_attest_snyk",
-                  "client_reference/kosli_begin_trail",
-                  "client_reference/"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "API Reference",
-            "icon": "code",
-            "groups": [
-              {
-                "group": "Environments",
-                "pages": [
-                  "api-reference/endpoint/list_environments",
-                  "api-reference/endpoint/put_environment"
-                ]
-              }
-            ]
-          }
-        ]
       }
     ]
-  }
-]
   },
   "logo": {
     "light": "/logo/kosli-logo-light-main.svg",
