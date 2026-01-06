@@ -78,6 +78,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "group": "Integrations",
+                "icon": "puzzle-piece",
+                "pages": [
+                  "integrations/actions",
+                  "integrations/ci_cd"
+                ]
               }
             ]
           },
@@ -237,6 +245,10 @@
           {
             "label": "Privacy",
             "href": "https://www.kosli.com/privacy-policy/"
+          },
+          {
+            "label": "Community",
+            "href": "https://www.kosli.com/community/"
           }
         ]
       }
