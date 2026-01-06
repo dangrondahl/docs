@@ -84,7 +84,8 @@
                 "icon": "puzzle-piece",
                 "pages": [
                   "integrations/actions",
-                  "integrations/ci_cd"
+                  "integrations/ci_cd",
+                  "integrations/slack"
                 ]
               }
             ]

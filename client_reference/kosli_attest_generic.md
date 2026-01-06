@@ -9,9 +9,9 @@ description: "Report a generic attestation to an artifact or a trail in a Kosli 
 kosli attest generic [IMAGE-NAME | FILE-PATH | DIR-PATH] [flags]
 ```
 
-Report a generic attestation to an artifact or a trail in a Kosli flow.  
+Report a generic attestation to an artifact or a trail in a Kosli flow.
 
-The attestation can be bound to a *trail* using the trail name.  
+The attestation can be bound to a *trail* using the trail name.
 The attestation can be bound to an *artifact* in two ways:
 - using the artifact's SHA256 fingerprint which is calculated (based on the `--artifact-type` flag and the artifact name/path argument) or can be provided directly (with the `--fingerprint` flag).
 - using the artifact's name in the flow yaml template and the git commit from which the artifact is/will be created. Useful when reporting an attestation before creating/reporting the artifact.
@@ -76,57 +76,57 @@ In [this YAML file](https://app.kosli.com/api/v2/livedocs/cyber-dojo/yaml?ci=git
 
 ## Examples Use Cases
 
-These examples all assume that the flags  `--api-token`, `--org`, `--host`, (and `--flow`, `--trail` when required), are [set/provided](https://docs.kosli.com/getting_started/install/#assigning-flags-via-environment-variables). 
+These examples all assume that the flags  `--api-token`, `--org`, `--host`, (and `--flow`, `--trail` when required), are [set/provided](https://docs.kosli.com/getting_started/install/#assigning-flags-via-environment-variables).
 
 ##### report a generic attestation about a pre-built docker artifact (kosli calculates the fingerprint)
 
 ```shell
-kosli attest generic yourDockerImageName 
-	--artifact-type docker 
-	--name yourAttestationName 
+kosli attest generic yourDockerImageName
+	--artifact-type docker
+	--name yourAttestationName
 
 ```
 
 ##### report a generic attestation about a pre-built docker artifact (you provide the fingerprint)
 
 ```shell
-kosli attest generic 
-	--fingerprint yourDockerImageFingerprint 
-	--name yourAttestationName 
+kosli attest generic
+	--fingerprint yourDockerImageFingerprint
+	--name yourAttestationName
 
 ```
 
 ##### report a generic attestation about a trail
 
 ```shell
-kosli attest generic 
-	--name yourAttestationName 
+kosli attest generic
+	--name yourAttestationName
 
 ```
 
 ##### report a generic attestation about an artifact which has not been reported yet in a trail
 
 ```shell
-kosli attest generic 
-	--name yourTemplateArtifactName.yourAttestationName 
-	--commit yourArtifactGitCommit 
+kosli attest generic
+	--name yourTemplateArtifactName.yourAttestationName
+	--commit yourArtifactGitCommit
 
 ```
 
 ##### report a generic attestation about a trail with an attachment
 
 ```shell
-kosli attest generic 
-	--name yourAttestationName 
-	--attachments yourAttachmentPathName 
+kosli attest generic
+	--name yourAttestationName
+	--attachments yourAttachmentPathName
 
 ```
 
 ##### report a non-compliant generic attestation about a trail
 
 ```shell
-kosli attest generic 
-	--name yourAttestationName 
-	--compliant=false 
+kosli attest generic
+	--name yourAttestationName
+	--compliant=false
 ```
 
