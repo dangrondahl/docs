@@ -17,8 +17,8 @@ You can configure actions to be triggered by one or more of the following events
 - When an artifact ceases execution in an environment.
 - When instances of an artifact are scaled up or down.
 - When an artifact is added to the allow-list in an environment.
-- When an environment transitions from a **Compliant** state to a **Non-Compliant** state.
-- When an environment changes from a **Non-Compliant** state to a **Compliant** state.
+- When an environment changes state from <Badge color="green">Compliant</Badge> to <Badge color="red">Non-Compliant</Badge>.
+- When an environment changes state from <Badge color="red">Non-Compliant</Badge> to <Badge color="green">Compliant</Badge>.
 
 
 ## Slack Notifications
